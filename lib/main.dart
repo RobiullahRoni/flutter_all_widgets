@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'layout_widgets.dart';
 import 'home_page.dart';
 import 'about_page.dart';
 import 'profile_page.dart';
@@ -110,8 +111,203 @@ class widgetsPage extends StatelessWidget {
       ),
 
       body: ListView(
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.all(20),
         children: [
+          Card(
+            elevation: 5,
+            child: ListTile(
+              leading: ImageIcon(
+                AssetImage('assets/icons/layout.png'),
+                color: Colors.green,
+                size: 40,
+              ),
+              title: Text("Layout Widgets"),
+              subtitle: Text(
+                "Container, Row, Column, Stack, Expanded, Flexible, Wrap, Align, Center, Padding, SizedBox, AspectRatio, FractionallySizedBox, LayoutBuilder, OrientationBuilder, FittedBox, SafeArea.",
+              ),
+              trailing: Icon(Icons.arrow_forward_ios),
+              onTap: () {
+                Navigator.pushNamed(context, '/layout_widgets');
+              },
+            ),
+          ),
+
+          Card(
+            elevation: 5,
+            child: ListTile(
+              leading: Icon(Icons.account_tree, color: Colors.blue, size: 40),
+              title: Text("Structural Widgets"),
+              subtitle: Text(
+                "Scaffold, AppBar, Drawer, BottomSheet, NavigationBar, TabBar, PageView, IndexedStack, PreferredSize.",
+              ),
+              trailing: Icon(Icons.arrow_forward_ios),
+              onTap: () {
+                Navigator.pushNamed(context, '/');
+              },
+            ),
+          ),
+          Card(
+            elevation: 5,
+            child: ListTile(
+              leading: ImageIcon(
+                AssetImage('assets/icons/layout.png'),
+                color: Colors.green,
+                size: 40,
+              ),
+              title: Text("Layout Widgets"),
+              subtitle: Text(
+                "Container, Row, Column, Stack, Expanded, Flexible, Wrap, Align, Center, Padding, SizedBox, AspectRatio, FractionallySizedBox, LayoutBuilder, OrientationBuilder, FittedBox, SafeArea.",
+              ),
+              trailing: Icon(Icons.arrow_forward_ios),
+              onTap: () {
+                Navigator.pushNamed(context, '/layout_widgets');
+              },
+            ),
+          ),
+          Card(
+            elevation: 5,
+            child: ListTile(
+              leading: ImageIcon(
+                AssetImage('assets/icons/layout.png'),
+                color: Colors.green,
+                size: 40,
+              ),
+              title: Text("Layout Widgets"),
+              subtitle: Text(
+                "Container, Row, Column, Stack, Expanded, Flexible, Wrap, Align, Center, Padding, SizedBox, AspectRatio, FractionallySizedBox, LayoutBuilder, OrientationBuilder, FittedBox, SafeArea.",
+              ),
+              trailing: Icon(Icons.arrow_forward_ios),
+              onTap: () {
+                Navigator.pushNamed(context, '/layout_widgets');
+              },
+            ),
+          ),
+          Card(
+            elevation: 5,
+            child: ListTile(
+              leading: ImageIcon(
+                AssetImage('assets/icons/layout.png'),
+                color: Colors.green,
+                size: 40,
+              ),
+              title: Text("Layout Widgets"),
+              subtitle: Text(
+                "Container, Row, Column, Stack, Expanded, Flexible, Wrap, Align, Center, Padding, SizedBox, AspectRatio, FractionallySizedBox, LayoutBuilder, OrientationBuilder, FittedBox, SafeArea.",
+              ),
+              trailing: Icon(Icons.arrow_forward_ios),
+              onTap: () {
+                Navigator.pushNamed(context, '/layout_widgets');
+              },
+            ),
+          ),
+          Card(
+            elevation: 5,
+            child: ListTile(
+              leading: ImageIcon(
+                AssetImage('assets/icons/layout.png'),
+                color: Colors.green,
+                size: 40,
+              ),
+              title: Text("Layout Widgets"),
+              subtitle: Text(
+                "Container, Row, Column, Stack, Expanded, Flexible, Wrap, Align, Center, Padding, SizedBox, AspectRatio, FractionallySizedBox, LayoutBuilder, OrientationBuilder, FittedBox, SafeArea.",
+              ),
+              trailing: Icon(Icons.arrow_forward_ios),
+              onTap: () {
+                Navigator.pushNamed(context, '/layout_widgets');
+              },
+            ),
+          ),
+          Card(
+            elevation: 5,
+            child: ListTile(
+              leading: ImageIcon(
+                AssetImage('assets/icons/layout.png'),
+                color: Colors.green,
+                size: 40,
+              ),
+              title: Text("Layout Widgets"),
+              subtitle: Text(
+                "Container, Row, Column, Stack, Expanded, Flexible, Wrap, Align, Center, Padding, SizedBox, AspectRatio, FractionallySizedBox, LayoutBuilder, OrientationBuilder, FittedBox, SafeArea.",
+              ),
+              trailing: Icon(Icons.arrow_forward_ios),
+              onTap: () {
+                Navigator.pushNamed(context, '/layout_widgets');
+              },
+            ),
+          ),
+          Card(
+            elevation: 5,
+            child: ListTile(
+              leading: ImageIcon(
+                AssetImage('assets/icons/layout.png'),
+                color: Colors.green,
+                size: 40,
+              ),
+              title: Text("Layout Widgets"),
+              subtitle: Text(
+                "Container, Row, Column, Stack, Expanded, Flexible, Wrap, Align, Center, Padding, SizedBox, AspectRatio, FractionallySizedBox, LayoutBuilder, OrientationBuilder, FittedBox, SafeArea.",
+              ),
+              trailing: Icon(Icons.arrow_forward_ios),
+              onTap: () {
+                Navigator.pushNamed(context, '/layout_widgets');
+              },
+            ),
+          ),
+          Card(
+            elevation: 5,
+            child: ListTile(
+              leading: ImageIcon(
+                AssetImage('assets/icons/layout.png'),
+                color: Colors.green,
+                size: 40,
+              ),
+              title: Text("Layout Widgets"),
+              subtitle: Text(
+                "Container, Row, Column, Stack, Expanded, Flexible, Wrap, Align, Center, Padding, SizedBox, AspectRatio, FractionallySizedBox, LayoutBuilder, OrientationBuilder, FittedBox, SafeArea.",
+              ),
+              trailing: Icon(Icons.arrow_forward_ios),
+              onTap: () {
+                Navigator.pushNamed(context, '/layout_widgets');
+              },
+            ),
+          ),
+          Card(
+            elevation: 5,
+            child: ListTile(
+              leading: ImageIcon(
+                AssetImage('assets/icons/layout.png'),
+                color: Colors.green,
+                size: 40,
+              ),
+              title: Text("Layout Widgets"),
+              subtitle: Text(
+                "Container, Row, Column, Stack, Expanded, Flexible, Wrap, Align, Center, Padding, SizedBox, AspectRatio, FractionallySizedBox, LayoutBuilder, OrientationBuilder, FittedBox, SafeArea.",
+              ),
+              trailing: Icon(Icons.arrow_forward_ios),
+              onTap: () {
+                Navigator.pushNamed(context, '/layout_widgets');
+              },
+            ),
+          ),
+          Card(
+            elevation: 5,
+            child: ListTile(
+              leading: ImageIcon(
+                AssetImage('assets/icons/layout.png'),
+                color: Colors.green,
+                size: 40,
+              ),
+              title: Text("Layout Widgets"),
+              subtitle: Text(
+                "Container, Row, Column, Stack, Expanded, Flexible, Wrap, Align, Center, Padding, SizedBox, AspectRatio, FractionallySizedBox, LayoutBuilder, OrientationBuilder, FittedBox, SafeArea.",
+              ),
+              trailing: Icon(Icons.arrow_forward_ios),
+              onTap: () {
+                Navigator.pushNamed(context, '/layout_widgets');
+              },
+            ),
+          ),
           Card(
             elevation: 5,
             child: ListTile(
