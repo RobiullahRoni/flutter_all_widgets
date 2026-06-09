@@ -65,7 +65,7 @@ class HomePage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    'Robiullah Roni',
+                    'All Flutter',
                     style: TextStyle(color: Colors.white, fontSize: 18),
                   ),
                   const SizedBox(width: 20),
