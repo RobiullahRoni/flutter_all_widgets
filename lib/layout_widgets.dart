@@ -25,7 +25,11 @@ class LayoutWidgetsPage extends StatelessWidget {
       ),
 
       body: GridView.count(
-        crossAxisCount: 3,
+        crossAxisCount: MediaQuery.of(context).size.width < 700
+            ? 3
+            : MediaQuery.of(context).size.width < 1000
+            ? 4
+            : 6,
         padding: const EdgeInsets.all(20),
         crossAxisSpacing: 10,
         mainAxisSpacing: 10,

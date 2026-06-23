@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'button_widgets.dart';
+import 'input_widgets.dart';
 import 'layout_widgets.dart';
 import 'home_page.dart';
 import 'about_page.dart';
 import 'profile_page.dart';
 import 'structural_widgets.dart';
+import 'text_display_widgets.dart';
 
 void main() {
   runApp(MyApp());
@@ -23,6 +26,9 @@ class MyApp extends StatelessWidget {
         '/home': (context) => HomePage(),
         '/layout_widgets': (context) => LayoutWidgetsPage(),
         '/structural_widgets': (context) => StructuralWidgetsPage(),
+        '/text_display_widgets': (context) => TextDisplayWidgetsPage(),
+        '/button_widgets': (context) => ButtonWidgetsPage(),
+        '/input_widgets': (context) => InputWidgetsPage(),
         '/about': (context) => AboutPage(),
         '/profile': (context) => ProfilePage(),
       },
@@ -121,7 +127,7 @@ class widgetsPage extends StatelessWidget {
               leading: ImageIcon(
                 AssetImage('assets/icons/layout.png'),
                 color: Colors.green,
-                size: 40,
+                size: 35,
               ),
               title: Text("Layout Widgets"),
               subtitle: Text(
@@ -151,54 +157,51 @@ class widgetsPage extends StatelessWidget {
           Card(
             elevation: 5,
             child: ListTile(
-              leading: ImageIcon(
-                AssetImage('assets/icons/layout.png'),
-                color: Colors.green,
-                size: 40,
-              ),
-              title: Text("Layout Widgets"),
+              leading: Icon(Icons.text_fields, color: Colors.amber, size: 40),
+              title: Text("Text & Display Widgets"),
               subtitle: Text(
-                "Container, Row, Column, Stack, Expanded, Flexible, Wrap, Align, Center, Padding, SizedBox, AspectRatio, FractionallySizedBox, LayoutBuilder, OrientationBuilder, FittedBox, SafeArea.",
+                "Text, RichText, SelectableText, Icon, Image, FadeInImage, CircleAvatar, Card, ListTile, GridTile, GridTileBar",
               ),
               trailing: Icon(Icons.arrow_forward_ios),
               onTap: () {
-                Navigator.pushNamed(context, '/layout_widgets');
+                Navigator.pushNamed(context, '/text_display_widgets');
               },
             ),
           ),
           Card(
             elevation: 5,
             child: ListTile(
-              leading: ImageIcon(
-                AssetImage('assets/icons/layout.png'),
-                color: Colors.green,
+              leading: Icon(
+                Icons.radio_button_checked,
+                color: Colors.brown,
                 size: 40,
               ),
-              title: Text("Layout Widgets"),
+              title: Text("Button Widgets"),
               subtitle: Text(
-                "Container, Row, Column, Stack, Expanded, Flexible, Wrap, Align, Center, Padding, SizedBox, AspectRatio, FractionallySizedBox, LayoutBuilder, OrientationBuilder, FittedBox, SafeArea.",
+                "ElevatedButton, TextButton, IconButton, FloatingActionButton, PopupMenuButton, CheckboxListTile, RadioListTile",
               ),
               trailing: Icon(Icons.arrow_forward_ios),
               onTap: () {
-                Navigator.pushNamed(context, '/layout_widgets');
+                Navigator.pushNamed(context, '/button_widgets');
               },
             ),
           ),
           Card(
             elevation: 5,
             child: ListTile(
-              leading: ImageIcon(
-                AssetImage('assets/icons/layout.png'),
-                color: Colors.green,
+              leading: Icon(
+                Icons.input,
+                color: const Color.fromARGB(255, 24, 65, 65),
                 size: 40,
               ),
-              title: Text("Layout Widgets"),
+
+              title: Text("Input Widgets"),
               subtitle: Text(
-                "Container, Row, Column, Stack, Expanded, Flexible, Wrap, Align, Center, Padding, SizedBox, AspectRatio, FractionallySizedBox, LayoutBuilder, OrientationBuilder, FittedBox, SafeArea.",
+                "TextFormField, Form, Slider, Switch, Checkbox, Radio, DatePicker, TimePicker, DateRangePicker, AutoComplete",
               ),
               trailing: Icon(Icons.arrow_forward_ios),
               onTap: () {
-                Navigator.pushNamed(context, '/layout_widgets');
+                Navigator.pushNamed(context, '/input_widgets');
               },
             ),
           ),
