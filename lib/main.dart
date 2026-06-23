@@ -3,6 +3,7 @@ import 'layout_widgets.dart';
 import 'home_page.dart';
 import 'about_page.dart';
 import 'profile_page.dart';
+import 'structural_widgets.dart';
 
 void main() {
   runApp(MyApp());
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/home': (context) => HomePage(),
         '/layout_widgets': (context) => LayoutWidgetsPage(),
+        '/structural_widgets': (context) => StructuralWidgetsPage(),
         '/about': (context) => AboutPage(),
         '/profile': (context) => ProfilePage(),
       },
@@ -142,7 +144,7 @@ class widgetsPage extends StatelessWidget {
               ),
               trailing: Icon(Icons.arrow_forward_ios),
               onTap: () {
-                Navigator.pushNamed(context, '/');
+                Navigator.pushNamed(context, '/structural_widgets');
               },
             ),
           ),
