@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'button_widgets.dart';
 import 'input_widgets.dart';
+import 'interaction_widgets.dart';
 import 'layout_widgets.dart';
 import 'home_page.dart';
 import 'about_page.dart';
@@ -29,6 +30,7 @@ class MyApp extends StatelessWidget {
         '/text_display_widgets': (context) => TextDisplayWidgetsPage(),
         '/button_widgets': (context) => ButtonWidgetsPage(),
         '/input_widgets': (context) => InputWidgetsPage(),
+        '/interaction_widgets': (context) => InteractionWidgetsPage(),
         '/about': (context) => AboutPage(),
         '/profile': (context) => ProfilePage(),
       },
@@ -208,18 +210,17 @@ class widgetsPage extends StatelessWidget {
           Card(
             elevation: 5,
             child: ListTile(
-              leading: ImageIcon(
-                AssetImage('assets/icons/layout.png'),
-                color: Colors.green,
+              leading: Icon(Icons.integration_instructions,
+                color: Colors.black,
                 size: 40,
               ),
-              title: Text("Layout Widgets"),
+              title: Text("Interaction Widgets"),
               subtitle: Text(
-                "Container, Row, Column, Stack, Expanded, Flexible, Wrap, Align, Center, Padding, SizedBox, AspectRatio, FractionallySizedBox, LayoutBuilder, OrientationBuilder, FittedBox, SafeArea.",
+                "GestureDetector, InkWell, InteractiveViewer, Draggable, DragTarget, LongPressDraggable, Dismissible, IgnorePointer",
               ),
               trailing: Icon(Icons.arrow_forward_ios),
               onTap: () {
-                Navigator.pushNamed(context, '/layout_widgets');
+                Navigator.pushNamed(context, '/interaction_widgets');
               },
             ),
           ),
