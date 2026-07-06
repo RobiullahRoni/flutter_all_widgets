@@ -8,6 +8,9 @@ import 'about_page.dart';
 import 'profile_page.dart';
 import 'structural_widgets.dart';
 import 'text_display_widgets.dart';
+import 'list_%26_scroll_widgets.dart';
+import 'animation_widgets.dart';
+import 'async_widgets.dart';
 
 void main() {
   runApp(MyApp());
@@ -31,6 +34,9 @@ class MyApp extends StatelessWidget {
         '/button_widgets': (context) => ButtonWidgetsPage(),
         '/input_widgets': (context) => InputWidgetsPage(),
         '/interaction_widgets': (context) => InteractionWidgetsPage(),
+        '/list_scroll_widgets': (context) => ListScrollWidgetsPage(),
+        '/animation_widgets': (context) => AnimationWidgetsPage(),
+        '/async_widgets': (context) => AsyncWidgetsPage(),
         '/about': (context) => AboutPage(),
         '/profile': (context) => ProfilePage(),
       },
@@ -210,8 +216,9 @@ class widgetsPage extends StatelessWidget {
           Card(
             elevation: 5,
             child: ListTile(
-              leading: Icon(Icons.integration_instructions,
-                color: Colors.black,
+              leading: Icon(
+                Icons.integration_instructions,
+                color: Colors.orange,
                 size: 40,
               ),
               title: Text("Interaction Widgets"),
@@ -227,18 +234,32 @@ class widgetsPage extends StatelessWidget {
           Card(
             elevation: 5,
             child: ListTile(
-              leading: ImageIcon(
-                AssetImage('assets/icons/layout.png'),
-                color: Colors.green,
-                size: 40,
-              ),
-              title: Text("Layout Widgets"),
+              leading: Icon(Icons.list, color: Colors.purple, size: 40),
+              title: Text("List & Scroll Widgets"),
               subtitle: Text(
-                "Container, Row, Column, Stack, Expanded, Flexible, Wrap, Align, Center, Padding, SizedBox, AspectRatio, FractionallySizedBox, LayoutBuilder, OrientationBuilder, FittedBox, SafeArea.",
+                "ListView, GridView, ReorderableListView, RefreshIndicator, DraggableScrollableSheet.",
               ),
               trailing: Icon(Icons.arrow_forward_ios),
               onTap: () {
-                Navigator.pushNamed(context, '/layout_widgets');
+                Navigator.pushNamed(context, '/list_scroll_widgets');
+              },
+            ),
+          ),
+          Card(
+            elevation: 5,
+            child: ListTile(
+              leading: Icon(
+                Icons.animation,
+                color: const Color.fromARGB(255, 137, 149, 12),
+                size: 40,
+              ),
+              title: Text("Animation Widgets"),
+              subtitle: Text(
+                "AnimatedContainer, AnimatedOpacity, AnimatedCrossFade, AnimatedDefaultTextStyle, AnimatedRotation, AnimatedIcon, Hero, AnimatedBuilder, AnimatedList, AnimatedSwitcher.",
+              ),
+              trailing: Icon(Icons.arrow_forward_ios),
+              onTap: () {
+                Navigator.pushNamed(context, '/animation_widgets');
               },
             ),
           ),
@@ -250,31 +271,13 @@ class widgetsPage extends StatelessWidget {
                 color: Colors.green,
                 size: 40,
               ),
-              title: Text("Layout Widgets"),
+              title: Text("Async Widgets"),
               subtitle: Text(
-                "Container, Row, Column, Stack, Expanded, Flexible, Wrap, Align, Center, Padding, SizedBox, AspectRatio, FractionallySizedBox, LayoutBuilder, OrientationBuilder, FittedBox, SafeArea.",
+                "FutureBuilder, StreamBuilder, ValueListenableBuilder, SelectableText, TextSelection, TextField, TextFormField.",
               ),
               trailing: Icon(Icons.arrow_forward_ios),
               onTap: () {
-                Navigator.pushNamed(context, '/layout_widgets');
-              },
-            ),
-          ),
-          Card(
-            elevation: 5,
-            child: ListTile(
-              leading: ImageIcon(
-                AssetImage('assets/icons/layout.png'),
-                color: Colors.green,
-                size: 40,
-              ),
-              title: Text("Layout Widgets"),
-              subtitle: Text(
-                "Container, Row, Column, Stack, Expanded, Flexible, Wrap, Align, Center, Padding, SizedBox, AspectRatio, FractionallySizedBox, LayoutBuilder, OrientationBuilder, FittedBox, SafeArea.",
-              ),
-              trailing: Icon(Icons.arrow_forward_ios),
-              onTap: () {
-                Navigator.pushNamed(context, '/layout_widgets');
+                Navigator.pushNamed(context, '/async_widgets');
               },
             ),
           ),
